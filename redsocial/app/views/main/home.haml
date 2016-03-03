@@ -1,0 +1,4 @@
+%h1 Hola este es mi curso de rails5
+%p 
+	- if user_signed_in?
+		=link_to "Cerrar sesión", destroy_user_session_path, method: :delete
